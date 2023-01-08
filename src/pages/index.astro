@@ -1,0 +1,123 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+import Wave from "react-wavify";
+import CardOnOrange from "../components/CardOnOrange.astro";
+---
+
+<Layout title="sollee.eth">
+  <main>
+    <div class="bg-gradient-to-br from-red-600 to-yellow-500">
+      <section class="min-h-screen flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center">
+          <p class="text-center text-white text-7xl font-bold">sollee 🧑‍💻☀️</p>
+          <p class="text-center text-white text-2xl mt-4">
+            14 y/o he/him dev & decentralization maxi
+          </p>
+          <p class="text-center text-white text-2xl mt-4">
+            "Since there's no ending quote mark, everything after this is part
+            of my quote. —Randall Munroe
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="relative z-0 before:bg-white bubble h-32 after:bg-white">
+        </div>
+        <div class="bg-white min-h-screen">
+          <p class="text-center text-3xl font-bold">My socials</p>
+          <div class="flex flex-row justify-center mt-8">
+            <ul
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mx-4 text-center"
+            >
+              <Card href="">
+                <img src="./discord.svg" class="h-16" />
+                <h1 class="text-2xl font-bold">Discord</h1>
+                <p>Sollee#6071</p>
+              </Card>
+
+              <Card href="https://github.com/solleedev">
+                <img src="./github.svg" class="h-16" />
+                <h1 class="text-2xl font-bold">GitHub</h1>
+                <p>@solleedev</p>
+              </Card>
+              <Card href="https://twitter.com/sollee_eth">
+                <img src="./twitter.svg" class="h-16" />
+                <h1 class="text-2xl font-bold">Twitter</h1>
+                <p>@sollee_eth</p>
+              </Card>
+              <Card href="https://app.ens.domains/name/sollee.eth">
+                <img src="./ens-logo.svg" class="h-16" />
+                <h1 class="text-2xl font-bold">ENS</h1>
+                <p>sollee.eth</p>
+              </Card>
+              <Card href="https://mage.space/u/sollee">
+                <img src="./mage.ico" class="h-16" />
+                <h1 class="text-2xl font-bold">Mage</h1>
+                <p>u/sollee (requires login)</p>
+              </Card>
+              <Card href="https://mirror.xyz/sollee.eth">
+                <img src="./mirror.png" class="h-16" />
+                <h1 class="text-2xl font-bold">Mirror Blog</h1>
+                <p>sollee.eth</p>
+              </Card>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section>
+      <Wave
+        client:load
+        fill="#f97316"
+        paused={false}
+        options={{
+          height: 40,
+          amplitude: 40,
+          speed: 0.15,
+          points: 3,
+        }}
+      />
+      <div
+        class="bg-gradient-to-b from-orange-500 to-red-700 mt-[-1rem] min-h-screen text-white text-center flex flex-col items-center"
+      >
+        <h1 class="font-bold text-5xl">Honourable mention</h1>
+        <ul class="p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <CardOnOrange href="https://trustless.fi">
+            <h2 class="text-2xl font-bold">Trustless Finance</h2>
+            <p>
+              Trustless is a truly decentralized, governance-minimized
+              stablecoin on zkSync.
+            </p>
+          </CardOnOrange>
+
+          <CardOnOrange href="https://farcaster.xyz">
+            <h2 class="text-2xl font-bold">Farcaster</h2>
+            <p>Farcaster is a sufficiently decentralized social network.</p>
+          </CardOnOrange>
+          <CardOnOrange href="">
+            <h2 class="text-2xl font-bold">N/A</h2>
+            <p>wen new project</p>
+          </CardOnOrange>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-red-700 p-4 text-white">
+    " —Randall Munroe. Copyright (c) sollee.eth 2023, licensed under GPL 3.0
+  </footer>
+</Layout>
+
+<style>
+  .bubble::before {
+    content: "";
+    border-top-left-radius: 70% 100%;
+    border-top-right-radius: 70% 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+</style>

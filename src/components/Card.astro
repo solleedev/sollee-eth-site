@@ -1,0 +1,19 @@
+---
+export interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<li
+  class="bg-gradient-to-r from-red-500 to-yellow-500 rounded-xl p-2 text-black"
+>
+  <a href={href == "" ? undefined : href}>
+    <div
+      class="bg-white/80 hover:bg-orange-200/80 transition-all duration-300 delay-50 rounded-lg p-4 flex flex-col items-center h-full"
+    >
+      <slot />
+    </div>
+  </a>
+</li>
