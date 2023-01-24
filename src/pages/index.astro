@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
-import Wave from "react-wavify";
 import CardOnOrange from "../components/CardOnOrange.astro";
 ---
 
@@ -67,19 +66,8 @@ import CardOnOrange from "../components/CardOnOrange.astro";
       </section>
     </div>
     <section>
-      <Wave
-        client:load
-        fill="#f97316"
-        paused={false}
-        options={{
-          height: 40,
-          amplitude: 40,
-          speed: 0.15,
-          points: 3,
-        }}
-      />
       <div
-        class="bg-gradient-to-b from-orange-500 to-red-700 mt-[-1rem] min-h-screen text-white text-center flex flex-col items-center"
+        class="bg-gradient-to-b from-orange-500 to-red-700 mt-8 pt-4 min-h-screen text-white text-center flex flex-col items-center"
       >
         <h1 class="font-bold text-5xl">Honourable mention</h1>
         <ul class="p-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -95,13 +83,26 @@ import CardOnOrange from "../components/CardOnOrange.astro";
             <h2 class="text-2xl font-bold">Farcaster</h2>
             <p>Farcaster is a sufficiently decentralized social network.</p>
           </CardOnOrange>
-          <CardOnOrange href="">
-            <h2 class="text-2xl font-bold">N/A</h2>
-            <p>wen new project</p>
+          <CardOnOrange href="https://ultrasound.money">
+            <h2 class="text-2xl font-bold">Ultra Sound Money</h2>
+            <p>App tracking ETH deflation and stuff.</p>
+          </CardOnOrange>
+          <CardOnOrange href="https://optimism.io">
+            <h2 class="text-2xl font-bold">Optimism Collective</h2>
+            <p>They've got really cool a public goods funding program.</p>
+          </CardOnOrange>
+          <CardOnOrange href="https://newsletter.banklesshq.com/p/ultra-sound-money-">
+            <h2 class="text-2xl font-bold">Ultra Sound Money (blog post)</h2>
+            <p>Post by Bankless. A blog post that really made me think a lot.</p>
+          </CardOnOrange>
+          <CardOnOrange href="https://saifedean.com/">
+            <h2 class="text-2xl font-bold">Saifedean Ammous's books</h2>
+            <p>Gave me valuable insights about sound money. Made me a temporary Bitcoin maxi. Now I'm back to Ethereum maximalism.</p>
           </CardOnOrange>
         </ul>
       </div>
     </section>
+    
   </main>
   <footer class="bg-red-700 p-4 text-white">
     " —Randall Munroe. Copyright (c) sollee.eth 2023, licensed under GPL 3.0
