@@ -1,50 +1,99 @@
-# Welcome to [Astro](https://astro.build)
+# Drop-in Replacement for [CRA](http://create-react-app.dev/) but powered by [Vite](https://vitejs.dev/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+### Things in CRA, supported here:
+- Import SVG's directly as React Component via SVGR
+- Unit Testing via Jest & React Testing Library
+- ESLint Rules & Prettier
+- Tailwind
+- Absolute imports within `src` directory
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+### Extra Additions
+- Conventional Commits using `Commitlint`
+- Run Lint Checks, TS Checks, Formatting & Unit Tests  in Pre-commit via `lintstaged` & `husky`
 
+---
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+### Usage (with [degit](https://github.com/Rich-Harris/degit))
+```bash
+degit uchihamalolan/vite-react-ts your-app-name
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Tech Stack - Overview
+- Vite
+- React - Typscript
+  - react-error-boundary
+- pnpm
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+### Editor Config
 
-All commands are run from the root of the project, from a terminal:
+- vscode settings & extension recommendations
+- `.editorconfig` file
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+---
 
-## 👀 Want to learn more?
+### Lint and Formatting
+- Eslint & Prettier Configured
+- Lints
+  - react
+  - react hooks
+  - typescript
+  - jsx-a11y
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+### Testing
+- Jest + React Testing Library (plus some plugins)
+
+---
+
+### Styling
+- TailwindCSS v3
+
+---
+
+# Other Recommended Libraries:
+
+### Forms
+- React Hook Form
+- Zod (for validations)
+
+### CSS-in-js
+- Emotion
+- Complie Time Atomic CSS-in-Js
+  - Stylex (Facebook, not Open Source yet)
+  - Linaria
+  - Compiled (still in beta)
+
+### Routing
+- React-Router-Dom
+- React Location
+
+### Date Manipulation
+- Dayjs
+- date-fns
+- Luxon
+
+### HTTP Client
+- Ky
+- Axios
+
+### Global Store (full-blown / lite-version)
+- Redux Toolkit / Zustand
+- Recoil / Jotai
+- Mobx / Valtio
+- xstate / robot
+
+### Server State
+- React Query
+- SWR
+- RTKQuery
+
+<!-- ### Eslint Plugins
+- [eslint-plugin-jest-dom](https://testing-library.com/docs/ecosystem-eslint-plugin-jest-dom)
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) -->
