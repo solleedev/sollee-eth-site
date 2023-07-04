@@ -13,7 +13,7 @@ function App() {
               sollee
             </span>
           </h1>
-          <h2 className="text-xl mt-2">14 y/o he/him web3 dev</h2>
+          <h2 className="text-xl mt-2">he/him web3 dev</h2>
           <label>
             <p className="mt-2 text-sm">basic tidbits about me, expressed in bullet points</p>
             <List className="overflow-y-auto">
