@@ -36,8 +36,8 @@ function App() {
               </ExternalLink>
             </ListItem>{' '}
             <ListItem>
-              <ExternalLink href="https://mastodon.online/@sollee">
-                Mastodon (@sollee@mastodon.online)
+              <ExternalLink href="https://cyberplace.social/@sollee">
+                Mastodon (@sollee@cyberplace.social)
               </ExternalLink>
             </ListItem>{' '}
             <ListItem>
@@ -45,7 +45,7 @@ function App() {
                 Mirror Blog (sollee.eth)
               </ExternalLink>
             </ListItem>{' '}
-            <ListItem>Discord (Sollee#3367)</ListItem>
+            <ListItem>Discord (sollee.eth)</ListItem>
             <ListItem>
               <ExternalLink href="mailto://solleedev@proton.me">
                 Email (solleedev@proton.me)
