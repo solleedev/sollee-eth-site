@@ -4,16 +4,16 @@ import { ListItem } from 'components/ListItem';
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-red-600 to-yellow-500 flex flex-row justify-center xl:place-content-center p-4 h-full min-h-screen w-full">
+    <div className="flex flex-row justify-center p-4 w-full h-full min-h-screen bg-gradient-to-br from-red-600 to-yellow-500 xl:place-content-center">
       <div className="">
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="text-4xl font-bold">
             ☀️🧑‍💻{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-orange-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-600 to-orange-500">
               sollee
             </span>
           </h1>
-          <h2 className="text-xl mt-2">he/him web3 dev</h2>
+          <h2 className="mt-2 text-xl">he/him web3 dev</h2>
           <label>
             <p className="mt-2 text-sm">basic tidbits about me, expressed in bullet points</p>
             <List className="overflow-y-auto">
@@ -28,7 +28,7 @@ function App() {
             </List>
           </label>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">socials</h1>
           <List className="overflow-auto">
             <ListItem>
@@ -41,7 +41,7 @@ function App() {
                 Mirror Blog (sollee.eth)
               </ExternalLink>
             </ListItem>{' '}
-            <ListItem>Discord (Sollee#3367)</ListItem>
+            <ListItem>Discord (sollee.eth)</ListItem>
             <ListItem>
               <ExternalLink href="mailto://solleedev@proton.me">
                 Email (solleedev@proton.me)
@@ -57,7 +57,7 @@ function App() {
             </ListItem>
           </List>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">good read (mainly crypto, politics)</h1>
           <List className="overflow-auto">
             <ListItem>
@@ -121,7 +121,7 @@ function App() {
             </ListItem>
           </List>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">past and current work</h1>
           <List>
             <ListItem>
