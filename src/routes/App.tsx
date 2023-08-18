@@ -4,35 +4,35 @@ import { ListItem } from 'components/ListItem';
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-red-600 to-yellow-500 flex flex-row justify-center p-4 h-full min-h-screen w-full">
-      <div className="flex flex-col align-middle gap-4 max-w-xl w-full">
-        <div className="bg-white p-4 rounded">
+    <div className="flex flex-row justify-center p-4 w-full h-full min-h-screen bg-gradient-to-br from-red-600 to-yellow-500">
+      <div className="flex flex-col gap-4 w-full max-w-xl align-middle">
+        <div className="p-4 bg-white rounded">
           <h1 className="text-4xl font-bold text-center">
             ☀️🧑‍💻{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-orange-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-600 to-orange-500">
               sollee
             </span>
           </h1>
-          <h2 className="text-xl mt-2 text-center">he/him web3 dev</h2>
+          <h2 className="mt-2 text-xl text-center">he/him web3 dev</h2>
           <hr className="my-4" />
           <List className="overflow-y-auto mt-4">
             <ListItem>web3 dev & anarcho-capitalist</ListItem>
             <ListItem>ethereum maximalist</ListItem>
             <ListItem>tokiponist (jan Soli)</ListItem>
-            <ListItem>prefer reading &gt; listening</ListItem>
+            <ListItem>i prefer reading &gt; listening</ListItem>
             <ListItem>socially progressive</ListItem>
             <ListItem>
-              <s>twitter</s> mastodon shitposter
+              <s>twitter</s> <s>X</s> mastodon shitposter
             </ListItem>
             <ListItem>interested in AI</ListItem>
           </List>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">socials</h1>
           <List className="overflow-auto">
             <ListItem>
               <ExternalLink href="https://twitter.com/sollee_eth">
-                <s>Twitter (sollee_eth)</s>
+                <s>X (sollee_eth)</s>
               </ExternalLink>
             </ListItem>{' '}
             <ListItem>
@@ -61,7 +61,7 @@ function App() {
             </ListItem>
           </List>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">good read (mainly crypto, politics)</h1>
           <List className="overflow-auto">
             <ListItem>
@@ -123,9 +123,20 @@ function App() {
                 <i className="text-sm font-semibold">by rhodos</i>
               </ExternalLink>
             </ListItem>
+            <ListItem>
+              <ExternalLink href="https://saifedean.com/poe">
+                Principles of Economics <i className="text-sm font-semibold">by Saifedean Ammous</i>
+              </ExternalLink>
+            </ListItem>
+            <ListItem>
+              <ExternalLink href="https://geohot.github.io/blog/">
+                the singularity is nearer (blog){' '}
+                <i className="text-sm font-semibold">by George Hotz</i>
+              </ExternalLink>
+            </ListItem>
           </List>
         </div>
-        <div className="bg-white p-4 rounded">
+        <div className="p-4 bg-white rounded">
           <h1 className="font-mono text-xl">past and current work</h1>
           <List>
             <ListItem>
